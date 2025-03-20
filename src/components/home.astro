@@ -1,16 +1,15 @@
 ---
 import background from '../assets/background.svg';
-import '@styles/animations.css'
-import "@styles/styles.css"
-import ArrowDown from 'assets/arrowDown.astro';
-import Github from 'assets/Github.astro';
-import EmailInput from "@components/EmailInput.astro"
-import Youtube from 'assets/Youtube.astro';
+import "../styles/animations.css"
+import "../styles/styles.css"
+import ArrowDown from "../assets/arrowDown.astro"
+import Github from '../assets/Github.astro'
+import EmailInput from "../components/EmailInput.astro"
+import Youtube from '../assets/Youtube.astro'
 
 ---
 
 <div >
-	
 	<main>
 		<img id="background" src={background.src} alt="" fetchpriority="high" />
 		<img id="background" src={background.src} alt="" fetchpriority="high" />
@@ -27,7 +26,7 @@ import Youtube from 'assets/Youtube.astro';
 					<div class="flex flex-col gap-4">
 						<div class="flex flex-col">
 							<picture class="">
-								<img class="border-3 border-transparent bg-clip-border bg-gradient-to-r from-[#83295a] to-[#64348b] rounded-full w-[256px] h-[256px] m-6" src="/public/mifoto.jpeg" />
+								<img class="border-3 border-transparent bg-clip-border bg-gradient-to-r from-[#83295a] to-[#64348b] rounded-full w-[256px] h-[256px] m-6" src="/mifoto.jpeg" />
 							</picture>
 							<div>
 							</div>
@@ -41,12 +40,12 @@ import Youtube from 'assets/Youtube.astro';
 						</div>
 						<div class="flex flex-col gap-6">
 							<h2 class="text-gradient text-4xl font-semibold">Contacto</h2>
-							<EmailInput client:load />
+							<EmailInput/>
 							<div class="flex flex-row gap-4">
-								<a title="Github" href="https://github.com/Daniel-Ibay" class="hover:scale-110 duration-300">
+								<a href="https://github.com/Daniel-Ibay" title="Github"  class="hover:scale-110 duration-300">
 									<Github />
 								</a>
-								<a title="Youtube" href="https://www.youtube.com/@DibayDeveloper" class="hover:scale-110 duration-300">
+								<a href="https://www.youtube.com/@DibayDeveloper" title="Youtube"  class="hover:scale-110 duration-300">
 									<Youtube />
 								</a>
 							</div>
@@ -60,7 +59,7 @@ import Youtube from 'assets/Youtube.astro';
 							<div class="bg-[#2d353b] p-6 rounded-lg shadow-lg hover:scale-105 transition-all duration-500">
 								<h3 class="text-2xl font-bold mb-2">Fullstack</h3>
 								<p class="text-lg">Página de gestión financiera</p>
-									<img transition:name="fintrack-image" src="/public/FintrackScreenshot.png" class="h-48 rounded-xl p-2" />
+									<img transition:name="fintrack-image" src="/FintrackScreenshot.png" class="h-48 rounded-xl p-2" />
 								</div>
 							</div>
 						</a>
