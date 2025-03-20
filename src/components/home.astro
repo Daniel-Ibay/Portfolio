@@ -14,34 +14,34 @@ import Youtube from '../assets/Youtube.astro'
 		<img id="background" src={background.src} alt="" fetchpriority="high" />
 		<img id="background" src={background.src} alt="" fetchpriority="high" />
 		<section id="view" class="h-screen flex flex-col justify-center items-center">
-			<h1 id="title" class="text-9xl text-center">Daniel Ibay</h1>
-			<p id="subtitle" class="text-4xl text-center">FullStack Junior</p>
+			<h1 id="title" class="text-6xl md:text-9xl text-center">Daniel Ibay</h1>
+			<p id="subtitle" class="text-xl md:text-4xl text-center">FullStack Junior</p>
 			<a id="scrollDown" class="absolute bottom-16 flex justify-center items-center text-4xl opacity-75"><ArrowDown /></a>
 		</section>
-		<section class="h-screen bg-[#1c2027]">
+		<section class="h-full bg-[#1c2027]">
 			<div class="flex flex-col items-center gap-1 pt-4">
-				<h1 id="title2" class="scroll text-4xl text-center">Daniel Ibay</h1>
-				<p id="subtitle2" class="scroll text-2xl text-center">FullStack Junior</p>
-				<div class="flex flex-row gap-40 pt-10">
+				<h1 id="title2" class="scroll text-xl md:text-4xl text-center">Daniel Ibay</h1>
+				<p id="subtitle2" class="scroll text-xl md:text-2xl text-center">FullStack Junior</p>
+				<div class="flex flex-col xl:flex-row gap-10 md:gap-40 pt-10">
 					<div class="flex flex-col gap-4">
-						<div class="flex flex-col">
+						<div class="flex flex-col items-center sm:items-start">
 							<picture class="">
-								<img class="border-3 border-transparent bg-clip-border bg-gradient-to-r from-[#83295a] to-[#64348b] rounded-full w-[256px] h-[256px] m-6" src="/mifoto.jpeg" />
+								<img class="border-3 border-transparent bg-clip-border bg-gradient-to-r from-[#83295a] to-[#64348b] rounded-full w-[128px] h-[128px] md:w-[256px] md:h-[256px] m-6" src="/mifoto.jpeg" />
 							</picture>
 							<div>
 							</div>
 						</div>
 						<div>
-							<h2 class="text-gradient text-4xl font-semibold mb-4">Sobre mí</h2>
-							<p class="text-xl max-w-2xl mx-auto">
+							<h2 class="text-gradient text-2xl md:text-4xl font-semibold mb-4">Sobre mí</h2>
+							<p class="text-md md:text-xl max-w-2xl mx-auto w-[300px] sm:w-full">
 								Soy desarrollador fullstack sin experiencia laboral.<br> Tengo muchas aficiones, desde lo artístico como el dibujo o el canto hasta ciencias puras como las matemáticas y la física.
 								Me he formado gracias a cursos de internet de forma autodidacta, como <a class="underline text-blue-400" href="https://pll.harvard.edu/course/cs50-introduction-computer-science">CS50</a> de Harvard, <a class="underline text-blue-400" href="https://fullstackopen.com/es/">FullStack Open</a> de la Universidad de Helsinki y cursos de YouTube, como los de <a class="underline text-blue-400" href="https://www.youtube.com/c/midudev">Midudev</a>.
 							</p>
 						</div>
 						<div class="flex flex-col gap-6">
-							<h2 class="text-gradient text-4xl font-semibold">Contacto</h2>
+							<h2 class="text-gradient text-2xl md:text-4xl font-semibold">Contacto</h2>
 							<EmailInput/>
-							<div class="flex flex-row gap-4">
+							<div class="flex flex-row gap-4 mx-auto md:mx-0">
 								<a href="https://github.com/Daniel-Ibay" title="Github"  class="hover:scale-110 duration-300">
 									<Github />
 								</a>
@@ -52,20 +52,23 @@ import Youtube from '../assets/Youtube.astro'
 						</div>
 					</div>
 					<div class="flex flex-col">
-						<div class="h-[320px]"></div>
-						<h2 class="text-gradient text-4xl font-semibold mb-4">Mis Proyectos</h2>
+						<div class="xl:h-[320px]"></div>
+						<h2 class="text-gradient text-2xl md:text-4xl font-semibold mb-4">Mis Proyectos</h2>
 						<a title="Ver más" href="/fintrack" class=" mt-4 block">
 						<div class="grid grid-cols-1 gap-8">
-							<div class="bg-[#2d353b] p-6 rounded-lg shadow-lg hover:scale-105 transition-all duration-500">
-								<h3 class="text-2xl font-bold mb-2">Fullstack</h3>
-								<p class="text-lg">Página de gestión financiera</p>
-									<img transition:name="fintrack-image" src="/FintrackScreenshot.png" class="h-48 rounded-xl p-2" />
+							<div class="bg-[#2d353b] p-2 sm:p-6 rounded-lg shadow-lg hover:scale-105 transition-all duration-500">
+								<h3 class="text-lg md:text-2xl font-bold mb-2">Fullstack</h3>
+								<p class="text-md md:text-lg">Página de gestión financiera</p>
+									<img transition:name="fintrack-image" src="/FintrackScreenshot.png" class="h-30 sm:h-48 rounded-xl p-2" />
 								</div>
 							</div>
 						</a>
 					</div>
 				</div>
 			</div>
+		</section>
+		<section class="h-[100px] bg-[#1c2027]">
+
 		</section>
 	</main>
 </div>
