@@ -1,0 +1,57 @@
+#title {
+  animation-duration: 1s;
+  animation-name: fadeInTranslate-Y;
+  animation-timing-function: cubic-bezier(0.38, 0.73, 0.92, 0.26);
+  font-family: "Pixelify Sans", sans-serif !important;
+  font-weight: normal;
+}
+
+#title2 {
+  font-family: "Pixelify Sans", sans-serif !important;
+  font-weight: normal;
+}
+
+#subtitle {
+  animation-duration: 1.3s;
+  animation-name: fadeInSubtitle, shuffle;
+  font-family: "Doto", sans-serif !important;
+  font-weight: semibold;
+}
+
+#subtitle2 {
+  font-family: "Doto", sans-serif !important;
+  font-weight: semibold;
+}
+
+#scrollDown {
+  animation-duration: 3s;
+  animation-name: buttonAnimation;
+  font-family: "Pixelify Sans", sans-serif !important;
+  font-weight: normal;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(100px);
+}
+
+.scroll {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+
+.text-gradient {
+  background: linear-gradient(to bottom right, #83295a, #64348b);
+  background-clip: text;
+  color: transparent;
+}
+
+.border-gradient {
+  border-image: linear-gradient(to bottom right, #83295a, #64348b);
+}

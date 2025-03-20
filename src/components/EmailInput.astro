@@ -1,0 +1,18 @@
+---
+import "@styles/style.css"
+import CopyIcon from "assets/CopyIcon.astro"
+---
+
+<div class="form__group field flex flex-row gap-2">
+  <div class="flex flex-col" >
+    <input class="form__field" placeholder="Name" name="name" id='name' value="danielibay1538@outlook.com" disabled required />
+    <label for="name" class="form__label">Email</label>
+  </div>
+  <div class="self-center hover:scale-110 duration-300" title="Copiar">
+    <button id="copyButton">
+      <CopyIcon />
+    </button>
+  </div>
+</div>
+
+<script src="/src/assets/copyText.js" defer></script>

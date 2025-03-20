@@ -1,0 +1,47 @@
+---
+import '@styles/animations.css'
+import "@styles/styles.css"
+---
+
+<div>
+	<main class="">
+		<section class="h-screen bg-[#1c2027] p-6">
+			<div class="flex flex-col gap-10 mx-auto items-center">
+				<h1 class=" text-6xl font-semibold pb-4">Fintrack</h1>
+				<a href="/">
+					<p class="underline hover:opacity-85 cursor-pointer text-xl">Volver</p>
+				</a>
+				<p class="text-2xl w-[480px]">Una aplicación de gestión financiera motivada por mi interés en las finanzas personales.
+				</p>
+				<a href="https://fin-track-frontend-phi.vercel.app/">
+					<img transition:name="fintrack-image" title="Fintrack" src="/public/FintrackScreenshot.png" class="w-[480px] hover:scale-105 duration-500">
+				</a>
+				<h2 class="text-4xl font-semibold">Tecnologías usadas:</h2>
+				<div class="flex flex-row gap-6">
+					<img title="JavaScript" src="/public/js-icon.png" class="w-16 hover:scale-110 duration-300">
+					<img title="Express" src="/public/express-icon.png" class="w-16 hover:scale-110 duration-300">
+					<img title="React" src="/public/react-icon.png" class="w-16 hover:scale-110 duration-300">
+					<img title="MongoDB" src="/public/mongodb-icon.png" class="w-16 hover:scale-110 duration-300">
+				</div>
+			</div>
+		</section>
+	</main>
+
+	
+</div>
+
+<style>
+	#title {
+		font-family: "Pixelify Sans", sans-serif !important;
+		font-weight: normal;
+	}
+
+	#subtitle {
+		font-family: "Doto", sans-serif !important;
+		font-weight: semibold;
+	}
+
+	.bg-with-opacity {
+		background: rgba(24, 27, 34, 0.842);
+	}
+</style>

@@ -1,11 +1,19 @@
+---
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Doto&display=swap" rel="stylesheet">
+		<ClientRouter />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Daniel Ibay</title>
 	</head>
 	<body>
 		<slot />
@@ -13,7 +21,10 @@
 </html>
 
 <style>
-	html,
+	html {
+		background-color:#0c0b13;
+		color: whitesmoke
+	},
 	body {
 		margin: 0;
 		width: 100%;
